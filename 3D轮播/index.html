@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Plugin Demo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="./css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--<h1 style="margin-top:150px;">demo</h1>-->
+<div id="wrap">
+    <div id="showcase" class="noselect">
+        <div class="cloud9-item" ><img src="img/lb1_01.png" alt="Firefox"><p><a href="#">AAAAAA</a></p></div>
+        <div class="cloud9-item" ><img src="img/lb1_02.png" alt="Firefox"><p><a href="#">BBBBBB</a></p></div>
+        <div class="cloud9-item" ><img src="img/lb1_03.png" alt="Firefox"><p><a href="#">CCCCC</a></p></div>
+        <div class="cloud9-item" ><img src="img/lb1_04.png" alt="Firefox"><p><a href="#">DDDDD</a></p></div>
+        <div class="cloud9-item" ><img src="img/lb1_05.png" alt="Firefox"><p><a href="#">EEEEE</a></p></div>
+        <!--<img class="cloud9-item" src="img/wyzo.png" alt="Wyzo">-->
+        <!--<img class="cloud9-item" src="img/opera.png" alt="Opera">-->
+        <!--<img class="cloud9-item" src="img/chrome.png" alt="Chrome">-->
+        <!--<img class="cloud9-item" src="img/iexplore.png" alt="Internet Explorer">-->
+        <!--<img class="cloud9-item" src="img/safari.png" alt="Safari">-->
+    </div>
+    <p id="item-title">&nbsp;</p>
+    <div class="nav" class="noselect">
+        <button class="left"> ← </button>
+        <button class="right"> → </button>
+    </div>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/reflection.js"></script>
+<script src="./js/jquery.cloud9carousel.js"></script>
+<script>
+
+    window.console = window.console || (function(){
+        var c = {}; c.log = c.warn = c.debug = c.info = c.error = c.time = c.dir = c.profile
+            = c.clear = c.exception = c.trace = c.assert = function(){};
+        return c;
+    })();
+    $(function() {
+        var showcase = $("#showcase")
+
+        showcase.Cloud9Carousel( {
+            yPos: 42,
+            yRadius: 48,
+            mirrorOptions: {
+                gap: 12,
+                height: 0.2
+            },
+            buttonLeft: $(".nav > .left"),
+            buttonRight: $(".nav > .right"),
+            autoPlay: true,
+            bringToFront: true,
+            onRendered: showcaseUpdated,
+            onLoaded: function() {
+                showcase.css( 'visibility', 'visible' )
+                showcase.css( 'display', 'none' )
+                showcase.fadeIn( 1500 )
+            }
+        } )
+
+        function showcaseUpdated( showcase ) {
+            // var title = $('#item-title').html(
+            //     $(showcase.nearestItem()).attr( 'alt' )
+            // )
+
+            var c = Math.cos((showcase.floatIndex() % 1) * 2 * Math.PI)
+            // title.css('opacity', 0.5 + (0.5 * c))
+        }
+
+        // Simulate physical button click effect
+        $('.nav > button').click( function( e ) {
+            var b = $(e.target).addClass( 'down' )
+            setTimeout( function() { b.removeClass( 'down' ) }, 80 )
+        } )
+
+        $(document).keydown( function( e ) {
+            switch( e.keyCode ) {
+                /* left arrow */
+                case 37:
+                    $('.nav > .left').click()
+                    break
+
+                /* right arrow */
+                case 39:
+                    $('.nav > .right').click()
+            }
+        } )
+    })
+</script>
+</body>
+</html>

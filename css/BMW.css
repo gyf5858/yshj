@@ -1,0 +1,385 @@
+
+body, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, a, code, em, img, q, small, strong, li, ul, fieldset, form, label, table, tbody, tr, th, td {color: #333; font-size: 14px;   font-family: "Microsoft YaHei" ! important; margin: 0; padding: 0;}
+*{ margin: 0; padding: 0;}
+img{display: inline-block; outline: 0; border: 0;}
+ul li{list-style: none;}
+a{ text-decoration: none; outline: 0;}
+.fl{float: left;}
+.fr{float: right;}
+body {
+    font-family: "Microsoft YaHei" ! important;
+    color:black;
+}
+* {
+    color: #333;
+    font-family: "Microsoft YaHei" ! important;
+
+}
+
+h2,h3,h4 {
+    font-weight: normal;
+}
+
+.clearfix:after {
+    content:"";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+
+}
+
+.clearfix {
+    zoom:1;
+}
+
+.banxin {
+    width: 1230px;
+    margin:0 auto;
+}
+
+/*banner图开始*/
+.banner img {
+    width: 100%;
+    height: 465px;
+}
+
+/*内容开始*/
+
+.content {
+    /*background-color: #999;*/
+    height: 2230px;
+    margin-top: -5px;
+    overflow: hidden;
+}
+
+/*新闻开始*/
+.news {
+    height: 350px;
+    margin-top: 50px;
+}
+
+.video {
+    margin-left: 10px;
+}
+
+.news_list {
+    width: 680px;
+    height: 350px;
+}
+
+.dynamic_title {
+    margin-top: 20px;
+}
+
+.dynamic_title a {
+    font-size: 24px;
+    font-weight:bolder;
+    color:black;
+}
+
+.dynamic_title a:hover {
+    color:red;
+
+}
+
+.dynamic_list {
+    margin-top: 15px;
+}
+
+.dynamic_list li {
+    height: 46px;
+    line-height: 46px;
+}
+
+.dynamic_list li h4 a {
+    font-size: 18px;
+    font-weight:normal;
+    color:black;
+}
+
+.dynamic_list li h4 a:hover {
+    color:red;
+}
+
+.dynamic_list li h4 a i {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #383430;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: -10px;
+    line-height: 45px;
+}
+
+.dynamic_list li h4 a span {
+    float: right;
+    margin-right: 15px;
+    color:#504f4f;
+}
+
+.news_more {
+    margin-right: 15px;
+}
+
+.news_more a {
+    color:#070705;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news_more a:hover {
+    color:red;
+}
+
+    /*图解*/
+
+.illustration a img{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/*政策文件开始*/
+
+.zcwj {
+    margin-top: 50px;
+}
+
+.zcwj_title {
+    margin: 0 auto;
+}
+
+.zcwj_list {
+    margin-top: 30px;
+}
+
+.zcwj_list ul li {
+    float: left;
+    width: 611px;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.zcwj_list ul li a {
+    font-size:17px;
+    color:#060001;
+    font-weight:normal;
+}
+
+.zcwj_list ul li a:hover {
+    color:red;
+}
+
+.zcwj_list ul li a img {
+    margin-right: 10px;
+    margin-left: 75px;
+}
+
+.zcwj_list ul li a span {
+    margin-left: 50px;
+    color:#504f4f;
+
+}
+
+.zcwj_more {
+    float: right;
+    margin-right: 15px;
+}
+
+.zcwj_more a {
+    color:#070705;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.zcwj_more a:hover {
+    color:red;
+}
+
+/*政策解读开始 */
+
+.Interpretation {
+    margin-top: 50px;
+}
+
+.Interpretation_title {
+    margin: 0 auto;
+}
+
+.lb {
+    margin-top: 30px;
+}
+
+.cloud9-item p {
+    width: 100%;
+    height: 50px;
+    background-color: #c7e8fe;
+    margin-top: -5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.cloud9-item p a {
+    color:#0065de;
+    font-size: 16px;
+}
+
+/*.经济数据开始*/
+
+.economic {
+    margin-top: 50px;
+}
+
+.economic_title {
+    margin: 0 auto;
+}
+
+.economic_list {
+   background-image: url("../images/business20190910_36.png");
+    height: 388px;
+    width: 1146px;
+    margin-top: 40px;
+    margin-left: 37px;
+    position:relative;
+}
+
+.arrow {
+    margin-left: 350px;
+}
+
+.arrow_up {
+    position: absolute;
+    top: 31px;
+}
+
+
+.arrow_down {
+    position: absolute;
+    bottom: 41px;
+}
+
+.data {
+    margin-left: 68px;
+    overflow: hidden;
+    height: 275px;
+    width: 660px;
+    padding-top: 59px;
+}
+
+.data ul li h4{
+    height: 68px;
+    line-height: 68px;
+    font-size: 19px;
+    color:#2f56b1;
+    padding-left: 47px;
+}
+
+.data_content {
+    margin-top: 65px;
+    margin-right: 40px;
+
+}
+
+.data_content ul li {
+    width: 355px;
+    color:white;
+    font-size: 16px;
+
+}
+
+.reading {
+    margin-top: 40px;
+
+}
+
+.reading a {
+    color:#ffffbb;
+    font-size: 14px;
+}
+
+.reading a:hover {
+    color:red;
+}
+
+#data ul .active h4{
+    background-color: #2f56b1;
+    color:white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+
+
+    /*.经济数据结束*/
+
+/*办事指南开始*/
+
+.affairs {
+    margin-top: 50px;
+}
+
+.affairs_title {
+    margin: 0 auto;
+}
+
+.affairs_list {
+    margin-top: 42px;
+    width: 1300px;
+    margin-left: 10px;
+}
+
+.affairs_list li {
+    float: left;
+    margin-right: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
