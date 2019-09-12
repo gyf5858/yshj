@@ -224,6 +224,11 @@ h2,h3,h4 {
 .cloud9-item p a {
     color:#0065de;
     font-size: 16px;
+
+}
+
+.cloud9-item p a:hover {
+    text-decoration: underline;
 }
 
 /*.经济数据开始*/
@@ -311,7 +316,19 @@ h2,h3,h4 {
 
 }
 
+.data_more {
+    float: right;
+    margin-top: 140px;
+    margin-right: 50px;
+}
 
+.data_more a {
+    color:white;
+}
+
+.data_more a:hover {
+    color:white;
+}
 
     /*.经济数据结束*/
 
